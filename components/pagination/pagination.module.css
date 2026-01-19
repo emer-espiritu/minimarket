@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* Botones Prev / Next */
+.button {
+  border-radius: 50%;
+  outline: 2px solid var(--color-primary);
+  padding: 0.6rem 0.85rem;
+  font-size: 0.875rem;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.button:hover:not(.disabled) {
+  background: transparent;
+  outline-color: var(--foreground);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estado deshabilitado (Prev / Next) */
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Botones de páginas */
+.pageButton {
+  min-width: 2.25rem;
+  border-radius: 50%;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Página activa */
+.active {
+  background: var(--color-border);
+  outline: 2px solid transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: none;
+  color: white;
+}
+
+/* Página inactiva */
+.inactive {
+  background: transparent;
+  color: #475569;
+  outline: 2px solid #cbd5e1;
+  border: none;
+}
+
+/* Hover páginas inactivas */
+.pageButton:hover:not(.active) {
+  background: transparent;
+  outline-color: var(--foreground);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,19 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+}
+
+.link {
+  outline: 2px solid var(--color-primary);
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  transition: outline-color 0.2s ease-in-out;
+  &:hover {
+    outline-color: var(--color-hover);
+  }
+}

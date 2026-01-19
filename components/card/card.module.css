@@ -1,0 +1,101 @@
+.card {
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  border-radius: 16px;
+  outline: 2px solid var(--color-border);
+}
+
+/* Imagen */
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.category {
+  background: oklch(79.5% 0.184 86.047);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.status {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.active {
+  background: var(--color-succes);
+}
+
+.inactive {
+  background: oklch(55.4% 0.046 257.417);
+}
+
+/* Texto */
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.85;
+}
+
+/* Precio */
+.priceWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.price {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.unit {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Stock */
+.stock {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-succes);
+  font-weight: bold;
+}
+
+.outStock {
+  color: var(--color-danger);
+}
+
+/* Ganancia */
+.profit {
+  font-size: 0.7rem;
+  text-align: center;
+  opacity: 0.6;
+}
