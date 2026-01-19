@@ -6,7 +6,7 @@ import FormProduct from "@/components/form/FormProduct";
 import { getAllCategory } from "@/actions/category-actions";
 
 const ProductCreate = async () => {
-  const categories = await getAllCategory();
+  const { categories } = await getAllCategory();
   const categoryOptions = categories.map((c) => ({
     value: c.id,
     label: c.name,
